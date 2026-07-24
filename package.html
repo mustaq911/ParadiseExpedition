@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Packages — Paradise Expedition</title>
+<link rel="icon" href="assets/logo_raw.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo_raw.png" alt="Paradise Expedition logo">
+      <div class="brand-text">
+        <div class="name">PARADISE <span>EXPEDITION</span></div>
+        <div class="tag">Explore. Experience. Enjoy.</div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="package.html" class="active">Packages</a></li>
+        <li><a href="package.html#includes">Includes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="https://wa.me/94771161154?text=Hi%20Paradise%20Expedition%2C%20I%27d%20like%20to%20know%20more%20about%20your%20Sri%20Lanka%20tours." target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32"><path d="M16.001 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.475.673 4.789 1.844 6.777L2.667 29.333l6.723-1.812A13.28 13.28 0 0 0 16.001 29.333C23.364 29.333 29.334 23.364 29.334 16S23.364 2.667 16.001 2.667zm7.617 18.86c-.324.912-1.6 1.671-2.62 1.891-.697.148-1.607.267-4.67-1.003-3.917-1.622-6.437-5.598-6.634-5.858-.19-.26-1.596-2.125-1.596-4.055 0-1.93.984-2.876 1.334-3.27.324-.365.706-.457.943-.457.237 0 .474.002.681.013.219.011.512-.083.8.611.324.78 1.1 2.703 1.196 2.9.096.198.16.427.032.687-.128.26-.192.42-.383.647-.192.226-.402.505-.575.678-.192.191-.392.398-.169.783.223.385.99 1.634 2.126 2.647 1.461 1.303 2.693 1.706 3.078 1.898.385.191.61.16.834-.096.223-.257.958-1.117 1.213-1.5.256-.385.512-.32.864-.192.353.128 2.242 1.058 2.627 1.25.385.192.64.288.734.45.096.16.096.928-.228 1.84z"/></svg>
+      <span>WhatsApp Us</span>
+    </a>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- ===================== TOUR HERO ===================== -->
+<section class="tour-hero">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold);">Discover the Cultural &amp; Scenic Beauty of Sri Lanka</span>
+    <h1>Classic Sri Lanka Tour</h1>
+    <p>Two private, chauffeur-guided itineraries covering temples, tea country, mountains, wildlife and coast. Pick the length that suits your holiday, then message us to lock in your dates.</p>
+    <div class="tour-switch">
+      <button id="btn-7d" class="active" onclick="showTour('7d')">7 Days / 6 Nights</button>
+      <button id="btn-5d" onclick="showTour('5d')">5 Days / 4 Nights</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7 DAY ITINERARY ===================== -->
+<section id="tour-7d">
+  <div class="wrap">
+
+    <div id="plan-7d" class="tour-plan active">
+      <div class="section-head">
+        <span class="eyebrow">7 Days / 6 Nights</span>
+        <h2>The Extended Classic Route</h2>
+        <p>Colombo → Kandy → Nuwara Eliya → Ella → Yala → Bentota → Colombo. The full island loop, including a Yala safari and coastal wind-down.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>1</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Airport / Colombo <span class="arrow">→</span> Kandy</h3>
+              <ul>
+                <li>Pinnawala Elephant Orphanage</li>
+                <li>Spice &amp; Herbal Garden</li>
+                <li>Temple of the Sacred Tooth Relic</li>
+                <li>Kandy Lake &amp; City Tour</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Kandy</div>
+            </div>
+            <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>2</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Kandy <span class="arrow">→</span> Nuwara Eliya</h3>
+              <ul>
+                <li>Shri Bhakta Hanuman Temple</li>
+                <li>Tea Plantation &amp; Tea Factory Visit</li>
+                <li>Ramboda Waterfall</li>
+                <li>Gregory Lake</li>
+                <li>Hakgala Botanical Garden</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+            </div>
+            <div class="day-photo"><img src="assets/d2_lake.png" alt="Gregory Lake, Nuwara Eliya"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>3</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Nuwara Eliya <span class="arrow">→</span> Ella</h3>
+              <ul>
+                <li>Seetha Amman Temple</li>
+                <li>Nine Arch Bridge</li>
+                <li>Little Adam's Peak</li>
+                <li>Ravana Falls</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Ella</div>
+            </div>
+            <div class="day-photo"><img src="assets/d3_bridge.png" alt="Nine Arch Bridge, Ella"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>4</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Ella <span class="arrow">→</span> Yala</h3>
+              <ul>
+                <li>Scenic Train Journey (Ella to Yala area)</li>
+                <li>Yala National Park Safari</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Yala</div>
+            </div>
+            <div class="day-photo"><img src="assets/d4_leopard.png" alt="Leopard, Yala National Park"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>5</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Yala <span class="arrow">→</span> Bentota</h3>
+              <ul>
+                <li>Scenic Southern Drive</li>
+                <li>Relax at Bentota Beach</li>
+                <li>Madu River Boat Safari</li>
+                <li>Optional Water Sports</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Bentota</div>
+            </div>
+            <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>6</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Bentota <span class="arrow">→</span> Colombo</h3>
+              <ul>
+                <li>Turtle Hatchery</li>
+                <li>Colombo City Tour</li>
+                <li>Shopping</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Colombo</div>
+            </div>
+            <div class="day-photo"><img src="assets/d6_colombo.png" alt="Colombo skyline"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>7</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Colombo <span class="arrow">→</span> Airport</h3>
+              <ul>
+                <li>Leisure Time</li>
+                <li>Last Minute Shopping</li>
+                <li>Airport Drop-off</li>
+              </ul>
+            </div>
+            <div class="day-photo"><img src="assets/d7_airport.png" alt="Airport departure"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== 5 DAY ITINERARY ===================== -->
+    <div id="plan-5d" class="tour-plan">
+      <div class="section-head">
+        <span class="eyebrow">5 Days / 4 Nights</span>
+        <h2>The Essential Classic Route</h2>
+        <p>Colombo → Kandy → Nuwara Eliya → Ella → Bentota → Colombo. A shorter loop through the cultural highlands and coast, perfect for a quick escape.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>1</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Airport / Colombo <span class="arrow">→</span> Kandy</h3>
+              <ul>
+                <li>Pinnawala Elephant Orphanage</li>
+                <li>Spice &amp; Herbal Garden</li>
+                <li>Temple of the Sacred Tooth Relic</li>
+                <li>Kandy Lake &amp; City Tour</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Kandy</div>
+            </div>
+            <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>2</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Kandy <span class="arrow">→</span> Nuwara Eliya</h3>
+              <ul>
+                <li>Shri Bhakta Hanuman Temple</li>
+                <li>Tea Plantation &amp; Tea Factory Visit</li>
+                <li>Ramboda Waterfall</li>
+                <li>Gregory Lake</li>
+                <li>Hakgala Botanical Garden</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+            </div>
+            <div class="day-photo"><img src="assets/d2_lake.png" alt="Gregory Lake, Nuwara Eliya"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>3</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Nuwara Eliya <span class="arrow">→</span> Ella</h3>
+              <ul>
+                <li>Seetha Amman Temple</li>
+                <li>Nine Arch Bridge</li>
+                <li>Little Adam's Peak</li>
+                <li>Ravana Falls</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Ella</div>
+            </div>
+            <div class="day-photo"><img src="assets/d3_bridge.png" alt="Nine Arch Bridge, Ella"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>4</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Ella <span class="arrow">→</span> Bentota</h3>
+              <ul>
+                <li>Scenic Southern Drive</li>
+                <li>Relax at Bentota Beach</li>
+                <li>Madu River Boat Safari</li>
+                <li>Optional Water Sports</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Bentota</div>
+            </div>
+            <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>5</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Bentota <span class="arrow">→</span> Colombo <span class="arrow">→</span> Airport</h3>
+              <ul>
+                <li>Turtle Hatchery</li>
+                <li>Colombo City Tour</li>
+                <li>Shopping</li>
+                <li>Airport Drop-off</li>
+              </ul>
+            </div>
+            <div class="day-photo"><img src="assets/d6_colombo.png" alt="Colombo skyline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== INCLUDES / EXCLUDES / WHY ===================== -->
+<section id="includes" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The fine print</span>
+      <h2>What's included, what isn't, and why travellers pick us</h2>
+    </div>
+    <div class="grid-3">
+      <div class="panel include">
+        <h4><span class="dot">✓</span>Package Includes</h4>
+        <ul>
+          <li>Private Air-Conditioned Vehicle</li>
+          <li>Professional English-Speaking Chauffeur Guide</li>
+          <li>Hotel Accommodation (4 or 6 nights)</li>
+          <li>Airport Pick-up &amp; Drop-off</li>
+          <li>Highway Tolls &amp; Parking Charges</li>
+          <li>Fuel &amp; Driver Allowance</li>
+        </ul>
+      </div>
+      <div class="panel exclude">
+        <h4><span class="dot">✕</span>Package Excludes</h4>
+        <ul>
+          <li>Entrance Tickets &amp; Activity Fees</li>
+          <li>Meals (unless specified)</li>
+          <li>Personal Expenses</li>
+          <li>Travel Insurance</li>
+        </ul>
+      </div>
+      <div class="panel why">
+        <h4><span class="dot">★</span>Why Choose Paradise Expedition?</h4>
+        <ul>
+          <li>Comfortable &amp; Reliable Transport</li>
+          <li>Customized Private Tours</li>
+          <li>Friendly, Experienced Chauffeurs</li>
+          <li>Best Value for Money</li>
+          <li>24/7 Customer Support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h3>Ready to book your Classic Sri Lanka Tour?</h3>
+        <p>Send us your travel dates on WhatsApp and we'll confirm availability the same day.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/94771161154?text=Hi%20Paradise%20Expedition%2C%20I%27d%20like%20to%20book%20the%20Classic%20Sri%20Lanka%20Tour." target="_blank" rel="noopener" class="btn btn-primary">Message on WhatsApp</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo_raw.png" alt="Paradise Expedition logo">
+          <div>
+            <div class="name">PARADISE EXPEDITION</div>
+            <div class="tag">Explore. Experience. Enjoy.</div>
+          </div>
+        </div>
+        <p>Private, chauffeur-guided Sri Lanka tours built around temples, tea country, wildlife and coastline — create memories for a lifetime.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="package.html">Tour Packages</a></li>
+          <li><a href="package.html#includes">What's Included</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Tours</h5>
+        <ul>
+          <li><a href="#" onclick="showTour('7d');window.scrollTo({top:0,behavior:'smooth'});return false;">7 Days / 6 Nights</a></li>
+          <li><a href="#" onclick="showTour('5d');window.scrollTo({top:0,behavior:'smooth'});return false;">5 Days / 4 Nights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.6 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.4c0-.6-.4-1-1-1z"/></svg> +94 77 116 1154</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg> info@paradise-expedition.com</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Sri Lanka</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Paradise Expedition. All rights reserved.</span>
+      <span>Explore Sri Lanka... Create Memories for a Lifetime!</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/94771161154?text=Hi%20Paradise%20Expedition%2C%20I%27d%20like%20to%20know%20more%20about%20your%20Sri%20Lanka%20tours." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.475.673 4.789 1.844 6.777L2.667 29.333l6.723-1.812A13.28 13.28 0 0 0 16.001 29.333C23.364 29.333 29.334 23.364 29.334 16S23.364 2.667 16.001 2.667zm7.617 18.86c-.324.912-1.6 1.671-2.62 1.891-.697.148-1.607.267-4.67-1.003-3.917-1.622-6.437-5.598-6.634-5.858-.19-.26-1.596-2.125-1.596-4.055 0-1.93.984-2.876 1.334-3.27.324-.365.706-.457.943-.457.237 0 .474.002.681.013.219.011.512-.083.8.611.324.78 1.1 2.703 1.196 2.9.096.198.16.427.032.687-.128.26-.192.42-.383.647-.192.226-.402.505-.575.678-.192.191-.392.398-.169.783.223.385.99 1.634 2.126 2.647 1.461 1.303 2.693 1.706 3.078 1.898.385.191.61.16.834-.096.223-.257.958-1.117 1.213-1.5.256-.385.512-.32.864-.192.353.128 2.242 1.058 2.627 1.25.385.192.64.288.734.45.096.16.096.928-.228 1.84z"/></svg>
+</a>
+
+<script>
+function showTour(which){
+  document.getElementById('plan-7d').classList.toggle('active', which==='7d');
+  document.getElementById('plan-5d').classList.toggle('active', which==='5d');
+  document.getElementById('btn-7d').classList.toggle('active', which==='7d');
+  document.getElementById('btn-5d').classList.toggle('active', which==='5d');
+}
+// open correct tab if URL has a hash on load
+window.addEventListener('DOMContentLoaded', function(){
+  if(window.location.hash === '#tour-5d'){ showTour('5d'); }
+});
+</script>
+
+</body>
+</html>
