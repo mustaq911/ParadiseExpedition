@@ -20,7 +20,7 @@
         <div class="tag">Explore. Experience. Enjoy.</div>
       </div>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" id="mainNav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="package.html">Packages</a></li>
@@ -32,7 +32,9 @@
       <svg viewBox="0 0 32 32"><path d="M16.001 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.475.673 4.789 1.844 6.777L2.667 29.333l6.723-1.812A13.28 13.28 0 0 0 16.001 29.333C23.364 29.333 29.334 23.364 29.334 16S23.364 2.667 16.001 2.667zm7.617 18.86c-.324.912-1.6 1.671-2.62 1.891-.697.148-1.607.267-4.67-1.003-3.917-1.622-6.437-5.598-6.634-5.858-.19-.26-1.596-2.125-1.596-4.055 0-1.93.984-2.876 1.334-3.27.324-.365.706-.457.943-.457.237 0 .474.002.681.013.219.011.512-.083.8.611.324.78 1.1 2.703 1.196 2.9.096.198.16.427.032.687-.128.26-.192.42-.383.647-.192.226-.402.505-.575.678-.192.191-.392.398-.169.783.223.385.99 1.634 2.126 2.647 1.461 1.303 2.693 1.706 3.078 1.898.385.191.61.16.834-.096.223-.257.958-1.117 1.213-1.5.256-.385.512-.32.864-.192.353.128 2.242 1.058 2.627 1.25.385.192.64.288.734.45.096.16.096.928-.228 1.84z"/></svg>
       <span>WhatsApp Us</span>
     </a>
-    <button class="nav-toggle" aria-label="menu">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -208,6 +210,31 @@ function sendToWhatsApp(e){
   window.open('https://wa.me/94771161154?text=' + encodeURIComponent(text), '_blank');
   return false;
 }
+
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+navToggle.addEventListener('click', function(){
+  const isOpen = mainNav.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+  document.body.classList.toggle('nav-open', isOpen);
+});
+mainNav.querySelectorAll('a').forEach(function(link){
+  link.addEventListener('click', function(){
+    mainNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+    document.body.classList.remove('nav-open');
+  });
+});
+window.addEventListener('resize', function(){
+  if(window.innerWidth > 860){
+    mainNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+    document.body.classList.remove('nav-open');
+  }
+});
 </script>
 
 </body>
