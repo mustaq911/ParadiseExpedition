@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Safety rules so newly added tour tabs hide/show correctly even if style.css hasn't been updated */
+  .weekend-option{display:none;}
+  .weekend-option.active{display:block;}
+  .tour-switch{flex-wrap:wrap;}
+</style>
 </head>
 <body>
 
@@ -42,11 +48,15 @@
 <section class="tour-hero">
   <div class="wrap">
     <span class="eyebrow" style="color:var(--gold);">Discover the Cultural &amp; Scenic Beauty of Sri Lanka</span>
-    <h1>Classic Sri Lanka Tour</h1>
-    <p>Two private, chauffeur-guided itineraries covering temples, tea country, mountains, wildlife and coast. Pick the length that suits your holiday, then message us to lock in your dates.</p>
+    <h1>Sri Lanka Tour Packages</h1>
+    <p>Private, chauffeur-guided itineraries covering temples, tea country, mountains, wildlife and coast. Pick the length that suits your holiday, then message us to lock in your dates.</p>
     <div class="tour-switch">
-      <button id="btn-7d" class="active" onclick="showTour('7d')">7 Days / 6 Nights</button>
+      <button id="btn-4d" onclick="showTour('4d')">4 Days / 3 Nights — Express</button>
+      <button id="btn-4dw" onclick="showTour('4dw')">4 Days / 3 Nights — Weekend Escape</button>
       <button id="btn-5d" onclick="showTour('5d')">5 Days / 4 Nights</button>
+      <button id="btn-6d" onclick="showTour('6d')">6 Days / 5 Nights</button>
+      <button id="btn-7d" class="active" onclick="showTour('7d')">7 Days / 6 Nights</button>
+      <button id="btn-10d" onclick="showTour('10d')">10 Days / 9 Nights</button>
     </div>
   </div>
 </section>
@@ -54,6 +64,310 @@
 <!-- ===================== 7 DAY ITINERARY ===================== -->
 <section id="tour-7d">
   <div class="wrap">
+
+    <!-- ===================== 4 DAY EXPRESS ITINERARY ===================== -->
+    <div id="plan-4d" class="tour-plan">
+      <div class="section-head">
+        <span class="eyebrow">4 Days / 3 Nights</span>
+        <h2>Scenic Sri Lanka Express</h2>
+        <p>Colombo → Kandy → Nuwara Eliya → Ella/Yala → Colombo. A fast-track getaway through the cultural highlands, built for time-constrained travellers.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>1</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Airport <span class="arrow">→</span> Kandy</h3>
+              <ul>
+                <li>Spice Gardens</li>
+                <li>Temple of the Sacred Tooth Relic</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Kandy</div>
+            </div>
+            <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>2</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Kandy <span class="arrow">→</span> Nuwara Eliya</h3>
+              <ul>
+                <li>Tea Plantations</li>
+                <li>Ramboda Falls</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+            </div>
+            <div class="day-photo"><img src="assets/d2_lake.png" alt="Tea Plantations, Nuwara Eliya"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>3</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Nuwara Eliya <span class="arrow">→</span> Ella / Yala</h3>
+              <ul>
+                <li>Nine Arch Bridge</li>
+                <li>Ravana Falls</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Ella / Yala</div>
+            </div>
+            <div class="day-photo"><img src="assets/d3_bridge.png" alt="Nine Arch Bridge, Ella"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>4</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Return <span class="arrow">→</span> Departure</h3>
+              <ul>
+                <li>Galle Fort / Colombo City Tour</li>
+                <li>Airport Drop-off</li>
+              </ul>
+            </div>
+            <div class="day-photo"><img src="assets/d7_airport.png" alt="Airport departure"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:2rem;">
+        <div class="panel include">
+          <h4><span class="dot">✓</span>Package Includes</h4>
+          <ul>
+            <li>Airport Pick-up &amp; Drop-off</li>
+            <li>Private A/C Vehicle &amp; Guide</li>
+            <li>3 Nights Hotel Accommodation</li>
+            <li>Daily Breakfast &amp; Fuel</li>
+          </ul>
+        </div>
+        <div class="panel exclude">
+          <h4><span class="dot">✕</span>Package Excludes</h4>
+          <ul>
+            <li>Air Tickets &amp; Visa Fees</li>
+            <li>Entrance Tickets &amp; Safari Fees</li>
+            <li>Personal Expenses &amp; Dinners</li>
+          </ul>
+        </div>
+        <div class="panel why">
+          <h4><span class="dot">★</span>Why Choose Paradise Expedition?</h4>
+          <ul>
+            <li>Comfortable &amp; Reliable Transport</li>
+            <li>Customized Private Tours</li>
+            <li>Friendly Experienced Chauffeurs</li>
+            <li>Best Value for Money</li>
+            <li>24/7 Customer Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== WEEKEND ESCAPE ITINERARY ===================== -->
+    <div id="plan-4dw" class="tour-plan">
+      <div class="section-head">
+        <span class="eyebrow">4 Days / 3 Nights · Friday – Monday</span>
+        <h2>Weekend Escape Sri Lanka</h2>
+        <p>Perfect for guests from the Middle East — a comfortable weekend itinerary through cool hill country and tropical beaches, with halal-friendly dining available throughout the tour.</p>
+      </div>
+
+      <div class="tour-switch" style="margin-bottom:2rem;">
+        <button id="btn-weekend-1" class="active" onclick="showWeekendOption('1')">Option 1: Sigiriya – Nuwara Eliya – Bentota</button>
+        <button id="btn-weekend-2" onclick="showWeekendOption('2')">Option 2: Kandy – Nuwara Eliya – Bentota – Colombo</button>
+      </div>
+
+      <div id="weekend-opt-1" class="weekend-option active">
+        <div class="timeline">
+          <div class="day-row">
+            <div class="day-num"><small>FRI</small><strong>1</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Airport Arrival <span class="arrow">→</span> Sigiriya</h3>
+                <ul>
+                  <li>Pinnawala Elephant Orphanage (Optional)</li>
+                  <li>Spice &amp; Herbal Garden</li>
+                  <li>Sigiriya Village Experience (Optional)</li>
+                  <li>Sunset at Pidurangala Rock or Sigiriya Viewpoint</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Sigiriya</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>SAT</small><strong>2</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Sigiriya <span class="arrow">→</span> Nuwara Eliya</h3>
+                <ul>
+                  <li>Sigiriya Lion Rock Fortress</li>
+                  <li>Matale Spice Garden</li>
+                  <li>Ramboda Waterfall</li>
+                  <li>Tea Factory &amp; Tea Plantation</li>
+                  <li>Gregory Lake &amp; Nuwara Eliya City Tour</li>
+                  <li>Strawberry Farm (Seasonal)</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+              </div>
+              <div class="day-photo"><img src="assets/d2_lake.png" alt="Gregory Lake, Nuwara Eliya"></div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>SUN</small><strong>3</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Nuwara Eliya <span class="arrow">→</span> Bentota</h3>
+                <ul>
+                  <li>Scenic Tea Estates</li>
+                  <li>St. Clair's &amp; Devon Waterfalls (Photo Stops)</li>
+                  <li>Coastal Scenic Drive</li>
+                  <li>Bentota Beach</li>
+                  <li>Madu River Boat Safari (Optional)</li>
+                  <li>Turtle Hatchery (Optional)</li>
+                  <li>Evening Relaxation</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Bentota</div>
+              </div>
+              <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>MON</small><strong>4</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Bentota <span class="arrow">→</span> Colombo <span class="arrow">→</span> Airport</h3>
+                <ul>
+                  <li>Colombo City Tour</li>
+                  <li>Galle Face Green</li>
+                  <li>Independence Square</li>
+                  <li>Shopping at One Galle Face, Colombo City Centre or Local Souvenir Shops</li>
+                  <li>Airport Transfer — End of Tour</li>
+                </ul>
+              </div>
+              <div class="day-photo"><img src="assets/d6_colombo.png" alt="Colombo skyline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weekend-opt-2" class="weekend-option">
+        <div class="timeline">
+          <div class="day-row">
+            <div class="day-num"><small>FRI</small><strong>1</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Airport <span class="arrow">→</span> Kandy</h3>
+                <ul>
+                  <li>Pinnawala Elephant Orphanage (Optional)</li>
+                  <li>Spice &amp; Herbal Garden</li>
+                  <li>Gem Museum &amp; Workshop</li>
+                  <li>Temple of the Sacred Tooth Relic</li>
+                  <li>Kandy Lake &amp; City Tour</li>
+                  <li>Cultural Dance Show (Optional)</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Kandy</div>
+              </div>
+              <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>SAT</small><strong>2</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Kandy <span class="arrow">→</span> Nuwara Eliya</h3>
+                <ul>
+                  <li>Royal Botanical Garden, Peradeniya</li>
+                  <li>Ramboda Waterfall</li>
+                  <li>Tea Plantation &amp; Tea Factory Visit</li>
+                  <li>Hanuman Temple</li>
+                  <li>Gregory Lake &amp; Nuwara Eliya City Tour</li>
+                  <li>Strawberry Farm (Seasonal)</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+              </div>
+              <div class="day-photo"><img src="assets/d2_lake.png" alt="Gregory Lake, Nuwara Eliya"></div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>SUN</small><strong>3</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Nuwara Eliya <span class="arrow">→</span> Bentota</h3>
+                <ul>
+                  <li>Scenic Tea Estates</li>
+                  <li>Devon &amp; St. Clair's Waterfalls (Photo Stops)</li>
+                  <li>Bentota Beach</li>
+                  <li>Madu River Boat Safari (Optional)</li>
+                  <li>Turtle Hatchery (Optional)</li>
+                  <li>Beach Leisure &amp; Sunset</li>
+                </ul>
+                <div class="day-stay">🛏 Overnight stay in Bentota</div>
+              </div>
+              <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+            </div>
+          </div>
+
+          <div class="day-row">
+            <div class="day-num"><small>MON</small><strong>4</strong></div>
+            <div class="day-card">
+              <div>
+                <h3>Bentota <span class="arrow">→</span> Colombo <span class="arrow">→</span> Airport</h3>
+                <ul>
+                  <li>Colombo City Tour</li>
+                  <li>Independence Square</li>
+                  <li>Gangaramaya Temple (Optional)</li>
+                  <li>Galle Face Green</li>
+                  <li>Shopping at One Galle Face Mall &amp; Colombo City Centre</li>
+                  <li>Airport Transfer — End of Tour</li>
+                </ul>
+              </div>
+              <div class="day-photo"><img src="assets/d6_colombo.png" alt="Colombo skyline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:2rem;">
+        <div class="panel include">
+          <h4><span class="dot">✓</span>Package Includes</h4>
+          <ul>
+            <li>Airport Meet &amp; Greet</li>
+            <li>Private A/C Vehicle</li>
+            <li>English-Speaking Chauffeur Guide</li>
+            <li>Accommodation with Breakfast</li>
+            <li>Highway Tolls &amp; Parking</li>
+            <li>Fuel Charges</li>
+          </ul>
+        </div>
+        <div class="panel exclude">
+          <h4><span class="dot">✕</span>Package Excludes</h4>
+          <ul>
+            <li>International Airfare</li>
+            <li>Entrance Tickets &amp; Activity Fees</li>
+            <li>Lunch &amp; Dinner</li>
+            <li>Personal Expenses</li>
+            <li>Travel Insurance</li>
+          </ul>
+        </div>
+        <div class="panel why">
+          <h4><span class="dot">★</span>Why Book This Weekend Escape?</h4>
+          <ul>
+            <li>Comfortable Weekend Itinerary</li>
+            <li>Family &amp; Couple Friendly</li>
+            <li>Cool Hill Country &amp; Tropical Beaches</li>
+            <li>Luxury Hotel Options</li>
+            <li>Halal-Friendly Dining Available</li>
+            <li>Great Shopping Before Departure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div id="plan-7d" class="tour-plan active">
       <div class="section-head">
@@ -176,6 +490,342 @@
             </div>
             <div class="day-photo"><img src="assets/d7_airport.png" alt="Airport departure"></div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== 6 DAY ITINERARY ===================== -->
+    <div id="plan-6d" class="tour-plan">
+      <div class="section-head">
+        <span class="eyebrow">6 Days / 5 Nights</span>
+        <h2>Classic Sri Lanka Tour — Cultural Highlands, Wildlife &amp; Coastal Escape</h2>
+        <p>Airport → Kandy → Nuwara Eliya → Ella → Yala → Mirissa → Bentota → Airport. Temples, tea country, a Yala safari and a relaxed coastal finish.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>1</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Airport <span class="arrow">→</span> Pinnawala <span class="arrow">→</span> Kandy</h3>
+              <ul>
+                <li>Pinnawala Elephant Orphanage</li>
+                <li>Spice &amp; Herbal Garden</li>
+                <li>Gem Museum (Optional)</li>
+                <li>Temple of the Sacred Tooth Relic</li>
+                <li>Kandy Lake</li>
+                <li>Cultural Dance Show (Optional)</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Kandy</div>
+            </div>
+            <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>2</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Kandy <span class="arrow">→</span> Peradeniya <span class="arrow">→</span> Nuwara Eliya</h3>
+              <ul>
+                <li>Royal Botanical Gardens, Peradeniya</li>
+                <li>Ramboda Waterfall</li>
+                <li>Tea Plantation &amp; Tea Factory</li>
+                <li>Gregory Lake</li>
+                <li>Nuwara Eliya City Tour</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+            </div>
+            <div class="day-photo"><img src="assets/d2_lake.png" alt="Gregory Lake, Nuwara Eliya"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>3</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Nuwara Eliya <span class="arrow">→</span> Ella</h3>
+              <ul>
+                <li>Seetha Amman Temple</li>
+                <li>Ashok Vatika</li>
+                <li>Nine Arch Bridge</li>
+                <li>Little Adam's Peak</li>
+                <li>Ravana Falls</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Ella</div>
+            </div>
+            <div class="day-photo"><img src="assets/d3_bridge.png" alt="Nine Arch Bridge, Ella"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>4</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Ella <span class="arrow">→</span> Yala <span class="arrow">→</span> Mirissa</h3>
+              <ul>
+                <li>Early Morning Yala National Park Jeep Safari</li>
+                <li>Drive to Mirissa</li>
+                <li>Relax at Mirissa Beach</li>
+                <li>Coconut Tree Hill</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Mirissa</div>
+            </div>
+            <div class="day-photo"><img src="assets/d4_leopard.png" alt="Yala National Park Safari"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>5</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Mirissa <span class="arrow">→</span> Bentota</h3>
+              <ul>
+                <li>Whale Watching (Seasonal)</li>
+                <li>Galle Fort</li>
+                <li>Unawatuna Beach</li>
+                <li>Madu River Boat Safari</li>
+                <li>Turtle Hatchery</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Bentota</div>
+            </div>
+            <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>6</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Bentota <span class="arrow">→</span> Airport</h3>
+              <ul>
+                <li>Bentota Beach</li>
+                <li>Colombo City Drive (if flight schedule allows)</li>
+                <li>Transfer to Bandaranaike International Airport</li>
+              </ul>
+            </div>
+            <div class="day-photo"><img src="assets/d7_airport.png" alt="Airport departure"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:2rem;">
+        <div class="panel include">
+          <h4><span class="dot">✓</span>Package Includes</h4>
+          <ul>
+            <li>Private Air-Conditioned Vehicle</li>
+            <li>Professional English-Speaking Chauffeur Guide</li>
+            <li>Hotel Accommodation (5 Nights)</li>
+            <li>Airport Pick-up &amp; Drop-off</li>
+            <li>Highway Tolls &amp; Parking Charges</li>
+            <li>Daily Breakfast &amp; Fuel</li>
+          </ul>
+        </div>
+        <div class="panel exclude">
+          <h4><span class="dot">✕</span>Package Excludes</h4>
+          <ul>
+            <li>Entrance Tickets &amp; Activity Fees</li>
+            <li>Air Tickets &amp; Visa Fees</li>
+            <li>Meals (unless specified)</li>
+            <li>Personal Expenses</li>
+            <li>Travel Insurance</li>
+          </ul>
+        </div>
+        <div class="panel why">
+          <h4><span class="dot">★</span>Why Choose Paradise Expedition?</h4>
+          <ul>
+            <li>Comfortable &amp; Reliable Transport</li>
+            <li>Customized Private Tours</li>
+            <li>Friendly Experienced Chauffeurs</li>
+            <li>Best Value for Money</li>
+            <li>24/7 Customer Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== 10 DAY ITINERARY ===================== -->
+    <div id="plan-10d" class="tour-plan">
+      <div class="section-head">
+        <span class="eyebrow">10 Days / 9 Nights</span>
+        <h2>Grand Sri Lanka Explorer — Comprehensive Island Loop with Wildlife &amp; Heritage</h2>
+        <p>Airport → Negombo → Sigiriya → Kandy → Nuwara Eliya → Ella → Yala → Mirissa → Bentota → Colombo → Airport. The complete island experience.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>1</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Airport <span class="arrow">→</span> Negombo</h3>
+              <ul>
+                <li>Relax on Negombo Beach</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Negombo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>2</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Negombo <span class="arrow">→</span> Sigiriya</h3>
+              <ul>
+                <li>Pinnawala Elephant Orphanage</li>
+                <li>Dambulla Cave Temples</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Sigiriya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>3</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Sigiriya <span class="arrow">→</span> Kandy</h3>
+              <ul>
+                <li>Sigiriya Rock Fortress</li>
+                <li>Temple of the Sacred Tooth Relic</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Kandy</div>
+            </div>
+            <div class="day-photo"><img src="assets/d1_kandy.png" alt="Temple of the Sacred Tooth Relic"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>4</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Kandy <span class="arrow">→</span> Nuwara Eliya</h3>
+              <ul>
+                <li>Peradeniya Botanical Gardens</li>
+                <li>Ramboda Tea Estates</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Nuwara Eliya</div>
+            </div>
+            <div class="day-photo"><img src="assets/d2_lake.png" alt="Nuwara Eliya tea country"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>5</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Nuwara Eliya <span class="arrow">→</span> Ella</h3>
+              <ul>
+                <li>Nine Arch Bridge</li>
+                <li>Little Adam's Peak</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Ella</div>
+            </div>
+            <div class="day-photo"><img src="assets/d3_bridge.png" alt="Nine Arch Bridge, Ella"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>6</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Ella <span class="arrow">→</span> Yala / Tissa</h3>
+              <ul>
+                <li>Yala National Park Safari</li>
+                <li>Wildlife Adventure</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Yala</div>
+            </div>
+            <div class="day-photo"><img src="assets/d4_leopard.png" alt="Yala National Park Safari"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>7</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Yala <span class="arrow">→</span> Mirissa</h3>
+              <ul>
+                <li>Relax on Mirissa Beach</li>
+                <li>Coconut Tree Hill</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Mirissa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>8</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Mirissa <span class="arrow">→</span> Bentota</h3>
+              <ul>
+                <li>Galle Fort</li>
+                <li>Madu River Boat Safari</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Bentota</div>
+            </div>
+            <div class="day-photo"><img src="assets/d5_beach.png" alt="Bentota Beach"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>9</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Bentota <span class="arrow">→</span> Colombo</h3>
+              <ul>
+                <li>Colombo City Tour</li>
+                <li>Shopping</li>
+              </ul>
+              <div class="day-stay">🛏 Overnight stay in Colombo</div>
+            </div>
+            <div class="day-photo"><img src="assets/d6_colombo.png" alt="Colombo skyline"></div>
+          </div>
+        </div>
+
+        <div class="day-row">
+          <div class="day-num"><small>DAY</small><strong>10</strong></div>
+          <div class="day-card">
+            <div>
+              <h3>Colombo <span class="arrow">→</span> Airport</h3>
+              <ul>
+                <li>Airport Transfer</li>
+                <li>Departure</li>
+              </ul>
+            </div>
+            <div class="day-photo"><img src="assets/d7_airport.png" alt="Airport departure"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:2rem;">
+        <div class="panel include">
+          <h4><span class="dot">✓</span>Package Includes</h4>
+          <ul>
+            <li>Airport Pick-up &amp; Drop-off</li>
+            <li>Private A/C Vehicle &amp; Guide</li>
+            <li>9 Nights Hotel Accommodation</li>
+            <li>Daily Breakfast &amp; Yala Safari</li>
+          </ul>
+        </div>
+        <div class="panel exclude">
+          <h4><span class="dot">✕</span>Package Excludes</h4>
+          <ul>
+            <li>Air Tickets &amp; Visa Fees</li>
+            <li>Entrance Tickets &amp; Meals</li>
+            <li>Personal Expenses</li>
+          </ul>
+        </div>
+        <div class="panel why">
+          <h4><span class="dot">★</span>Why Choose Paradise Expedition?</h4>
+          <ul>
+            <li>Comfortable &amp; Reliable Transport</li>
+            <li>Customized Private Tours</li>
+            <li>Friendly Experienced Chauffeurs</li>
+            <li>Best Value for Money</li>
+            <li>24/7 Customer Support</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -363,8 +1013,12 @@
       <div>
         <h5>Tours</h5>
         <ul>
-          <li><a href="#" onclick="showTour('7d');window.scrollTo({top:0,behavior:'smooth'});return false;">7 Days / 6 Nights</a></li>
+          <li><a href="#" onclick="showTour('4d');window.scrollTo({top:0,behavior:'smooth'});return false;">4 Days / 3 Nights — Express</a></li>
+          <li><a href="#" onclick="showTour('4dw');window.scrollTo({top:0,behavior:'smooth'});return false;">4 Days / 3 Nights — Weekend Escape</a></li>
           <li><a href="#" onclick="showTour('5d');window.scrollTo({top:0,behavior:'smooth'});return false;">5 Days / 4 Nights</a></li>
+          <li><a href="#" onclick="showTour('6d');window.scrollTo({top:0,behavior:'smooth'});return false;">6 Days / 5 Nights</a></li>
+          <li><a href="#" onclick="showTour('7d');window.scrollTo({top:0,behavior:'smooth'});return false;">7 Days / 6 Nights</a></li>
+          <li><a href="#" onclick="showTour('10d');window.scrollTo({top:0,behavior:'smooth'});return false;">10 Days / 9 Nights</a></li>
         </ul>
       </div>
       <div>
@@ -388,15 +1042,23 @@
 </a>
 
 <script>
+const TOUR_IDS = ['4d','4dw','5d','6d','7d','10d'];
 function showTour(which){
-  document.getElementById('plan-7d').classList.toggle('active', which==='7d');
-  document.getElementById('plan-5d').classList.toggle('active', which==='5d');
-  document.getElementById('btn-7d').classList.toggle('active', which==='7d');
-  document.getElementById('btn-5d').classList.toggle('active', which==='5d');
+  TOUR_IDS.forEach(function(id){
+    document.getElementById('plan-'+id).classList.toggle('active', id===which);
+    document.getElementById('btn-'+id).classList.toggle('active', id===which);
+  });
+}
+function showWeekendOption(which){
+  document.getElementById('weekend-opt-1').classList.toggle('active', which==='1');
+  document.getElementById('weekend-opt-2').classList.toggle('active', which==='2');
+  document.getElementById('btn-weekend-1').classList.toggle('active', which==='1');
+  document.getElementById('btn-weekend-2').classList.toggle('active', which==='2');
 }
 // open correct tab if URL has a hash on load
 window.addEventListener('DOMContentLoaded', function(){
-  if(window.location.hash === '#tour-5d'){ showTour('5d'); }
+  const hash = window.location.hash.replace('#tour-','');
+  if(TOUR_IDS.includes(hash)){ showTour(hash); }
 });
 
 const navToggle = document.getElementById('navToggle');
